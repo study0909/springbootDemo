@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1 th:text="${userName}"></h1>
+<input type="text" name="names" th:value="${userName}">
+<br>
+<em th:size="${userName}"></em>
+<span th:text="'欢迎你：'+${userName}"></span>
+<br>
+<span th:text="|欢迎你：${userName}!|"></span>
+</body>
+</html>
